@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Paginator } from '../components/Paginator';
-import { PaginatorContext } from '../components/Paginator/context';
+import { PaginatorContext } from '../contexts/PaginatorContext';
 
 export function UserList() {
   const [currentPage, setCurrentPage] = useState(1);

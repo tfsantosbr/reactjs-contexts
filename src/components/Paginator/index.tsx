@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { PaginatorContext } from './context';
+import { PaginatorContext } from '../../contexts/PaginatorContext';
 
 export function Paginator() {
   const { currentPage, pageSize, totalRecords, onPageChange } =
