@@ -1,4 +1,10 @@
 import { createContext } from "react";
-import { PaginatorContextProps } from "../components/Paginator/types";
+
+export interface PaginatorContextProps {
+    currentPage: number;
+    pageSize: number;
+    totalRecords: number;
+    onPageChange: (page: number) => void
+}
 
 export const PaginatorContext = createContext({} as PaginatorContextProps);
